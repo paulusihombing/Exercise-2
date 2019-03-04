@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="multiply.css">
+  </head>
+  <body>
+    <h2>Multiply Calculator</h2>
+    <input type="text" id="operand1"> <br>
+    <input type="text" id="operand2"> <br>
+
+    <button onclick="multiply()">multiply</button>
+  
+    <p id="result"></p>
+
+  </body>
+  <script>
+
+    //operasi perkalian
+    function multiply (x, y) {
+      var x = document.getElementById("operand1").value;
+      var y = document.getElementById("operand2").value;
+      var parMultiply = parseInt(x*y);
+      document.getElementById("result").innerHTML = parMultiply;
+
+    //cek data type
+      console.log(typeof(x))
+      console.log(typeof(y))
+      console.log(typeof(parMultiply))
+    }
+  </script>
+</html>
